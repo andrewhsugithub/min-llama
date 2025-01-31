@@ -1,16 +1,22 @@
-### My implementation of the llama3.2-1B
+# My implementation of the [Llama-3.2-1B-Instruct](https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct)
 
-- uses tokenizer from llama3.2-1B-instruct from huggingface
-- loads weights from llama3.2-1B-instruct from huggingface
+- uses tokenizer from Llama-3.2-1B-Instruct from huggingface
+- loads weights from Llama-3.2-1B-instruct from huggingface
+
+### Setup
+```bash
+pip install -r requirements.txt
+copy .env.template .env
+``` 
+> Note: Remember to gain access to the model from [Llama-3.2-1B-Instruct huggingface](https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct), then generate a token and add it to the .env file
 
 ### Run the example
 ```python
-copy .env.template .env
 python example.py
 ```
-> Note: remember to fill in the `.env` file with the correct values
 
 ### References
+- https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - https://github.com/meta-llama/llama3/tree/main
 - https://github.com/huggingface/transformers/blob/main/src/transformers/models/llama/modeling_llama.py
 - https://github.com/rasbt/LLMs-from-scratch/tree/main/ch05/07_gpt_to_llama
