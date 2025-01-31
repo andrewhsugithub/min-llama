@@ -1,10 +1,8 @@
-import token
 import torch
 
 from utils.find_device import get_available_device
 from transformers import AutoTokenizer, set_seed
 from llama_model import LlamaForCausalLM
-from tokenizer import ChatFormat, Tokenizer
 
 
 class Llama:
